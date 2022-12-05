@@ -2,7 +2,9 @@ package com.scavable.ftc_launcher;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.stage.FileChooser;
 
+import java.io.File;
 import java.io.IOException;
 
 
@@ -63,6 +65,15 @@ public class ButtonActions {
         };
 
         return patreonAction;
+    }
+    public static EventHandler<ActionEvent> extractAction(){
+        extractAction = event -> {
+            FileChooser fileChooser = new FileChooser();
+            FileChooser.ExtensionFilter extensionFilter = new FileChooser.ExtensionFilter("Zip files", "*.zip");
+            fileChooser.getExtensionFilters().add(extensionFilter);
+            File file = fileChooser.showOpenDialog(null);
+        };
+        return extractAction;
     }
 
 }

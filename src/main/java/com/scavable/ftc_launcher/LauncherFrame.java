@@ -23,9 +23,11 @@ public class LauncherFrame extends Application {
     Button settingsButton;
     VBox launcherSettingsPanel;
     ModpacksList modpacksList;
+    Directories directories;
 
     @Override
     public void start(Stage stage) {
+        directories = new Directories();
         primaryStage = stage;
         borderPane = new BorderPane();
         buttonsBar = new ButtonsBar();

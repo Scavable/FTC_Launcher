@@ -76,6 +76,7 @@ public class ButtonsBar {
     private void setActions() {
         curseForgeMenuItem.setOnAction(ButtonActions.curseForgeDownloadAction());
         ftbMenuItem.setOnAction(ButtonActions.ftbDownloadAction());
+        extractButton.setOnAction(ButtonActions.extractAction());
         websiteButton.setOnAction(ButtonActions.websiteAction());
         discordButton.setOnAction(ButtonActions.discordAction());
         patreonButton.setOnAction(ButtonActions.patreonAction());
