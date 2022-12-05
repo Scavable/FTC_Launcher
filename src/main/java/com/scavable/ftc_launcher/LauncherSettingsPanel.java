@@ -1,2 +1,3 @@
-package com.scavable.ftc_launcher;public class LauncherSettingsPanel {
+package com.scavable.ftc_launcher;
+public class LauncherSettingsPanel {
 }

@@ -25,7 +25,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.scavable.ftc_launcher'
-    mainClass = 'com.scavable.ftc_launcher.HelloApplication'
+    mainClass = 'com.scavable.ftc_launcher.TestClass'
 }
 
 javafx {
